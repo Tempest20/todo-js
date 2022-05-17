@@ -6,7 +6,7 @@ function createNoteElement(noteText) {
     let noteElement = document.createElement("div");
     noteElement.className = "note";
     let noteElementText = document.createElement("span");
-    noteElementText.innerHTML = noteText;
+    noteElementText.innerHTML = "- " + noteText;
     noteElement.appendChild(noteElementText);
     return noteElement;
 }
@@ -21,7 +21,6 @@ function saveNotes() {
 function loadNotes() {
     let txt = localStorage.getItem("value");
     let obj = JSON.parse(txt);
-    console.log(obj);
 
     if (obj.length != 0) {
         for (let i = 0; i < obj.length; i++) {

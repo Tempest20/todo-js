@@ -6,14 +6,13 @@
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/da8398096b.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>Notes</title>
+    <title>To-Do JS</title>
 </head>
 <body>
-
     <div class="container">
         <header>
-            <h1>Notes</h1>
-            <span>Type your notes below: </span>
+            <h1>To-Do JS</h1>
+            <span>Type your notes below:</span>
         </header>
         
         <div class="input-section">
@@ -51,7 +50,6 @@
                 $(this).animate({opacity: 0.8}, 100);
             });
             
-
             // add notes 
             $("#add-note-btn").click(function() {
                 let inputElement = $('input[name="new-note"]');
