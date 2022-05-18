@@ -1,6 +1,7 @@
 # To-Do JS
 
 Simple To-Do list app in HTML, CSS and JavaScript.
+jQuery used as well.
 
 Uses localStorage and JSON to store and read notes so they are kept between sessions.
 
