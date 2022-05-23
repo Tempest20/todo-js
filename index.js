@@ -1,7 +1,7 @@
 let noteArr = new Array();
 
 // funcs
-function createNoteElement(noteText) {
+const createNoteElement = (noteText) => {
     noteArr.push(noteText);
     let noteElement = document.createElement("div");
     noteElement.className = "note";
@@ -12,13 +12,13 @@ function createNoteElement(noteText) {
 }
 
 
-function saveNotes() {
+const saveNotes = () => {
     let arrJSON = JSON.stringify(noteArr);
     localStorage.setItem("value", arrJSON);
 }
 
 
-function loadNotes() {
+const loadNotes = ()  => {
     let txt = localStorage.getItem("value");
     let obj = JSON.parse(txt);
 
@@ -30,8 +30,7 @@ function loadNotes() {
     }
 }
 
-
-function clearNotes() {
+const clearNotes = ()  => {
     localStorage.clear();
     noteArr = [];
     obj = [];
